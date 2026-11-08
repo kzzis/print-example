@@ -1,0 +1,21 @@
+# 認証情報・秘密
+.env
+.env.*
+!.env.example
+.refresh_token
+
+# 環境ごとの設定(プリンターの IP など)。例は labels.config.example.json
+labels.config.json
+
+# データ(印刷履歴を含む)。dbPath を data/ 以外にした場合に備えて拡張子でも除外
+data/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.db
+
+# 依存・ログ・OS・ツール
+node_modules/
+*.log
+.DS_Store
+.claude/

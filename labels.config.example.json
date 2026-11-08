@@ -1,0 +1,7 @@
+{
+  "dbPath": "./data/labels.sqlite",
+  "printers": {
+    "front-desk": { "uri": "ipp://192.168.1.50/ipp/print" },
+    "warehouse": { "uri": "ipps://192.168.1.51/ipp/print", "insecure": true, "timeoutMs": 10000 }
+  }
+}

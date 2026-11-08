@@ -1,0 +1,22 @@
+{
+  "name": "ezeep-print",
+  "version": "0.3.0",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=22.18" },
+  "scripts": {
+    "start": "node src/server.ts",
+    "test": "node --test \"src/**/*.test.ts\"",
+    "typecheck": "tsc",
+    "example": "node --env-file=.env src/examples/ezeep-example.ts",
+    "ipp": "node src/examples/ipp-example.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^2.1.6",
+    "hono": "^4.13.17"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}
